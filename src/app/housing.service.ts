@@ -17,6 +17,12 @@ export class HousingService {
     );
   }
 
+  submitApplication(firstname: string, lastName: string, email: string) {
+    console.log(
+      `Homes application received: firstname: ${firstname}, lastName:${lastName}, email:${email}`
+    );
+  }
+
   readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
 
   housingLocationList: HousingLocation[] = [
